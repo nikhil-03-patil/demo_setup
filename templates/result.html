@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Prediction Result</h1>
+        
+        <div class="result-box">
+            <h2>Estimated Annual Salary: <span class="salary">{{ salary }}</span></h2>
+            
+            <h3>Based on your profile:</h3>
+            <ul>
+                <li><strong>Experience:</strong> {{ years_experience }} years</li>
+                <li><strong>Education:</strong> {{ education }}</li>
+                <li><strong>Role:</strong> {{ role }}</li>
+                <li><strong>City Tier:</strong> {{ city_tier }}</li>
+            </ul>
+            
+            <p class="note">Note: This is an estimate based on sample data and should be used for reference only.</p>
+        </div>
+        
+        <a href="/" class="back-btn">Make Another Prediction</a>
+    </div>
+</body>
+</html>
