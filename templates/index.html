@@ -7,5 +7,27 @@
 </head>
 <body>
     <h1> welcome to flask</h1>
+    <div>
+        <form name="myform">
+            <label>username:</label>
+            <input type="text" name="uname" required>
+            <br>
+            <br>
+            <label>password:</label>
+            <input type="password" name="pw" required>
+            <br>
+            <br>
+            <button onclick="func()" id="btn">SUBMIT</button>
+
+        </form>
+
+    </div>
+    <script>
+        function func() {
+            document.getElementById("btn").addEventListener('click', 
+                alert("button is clicked")
+            )
+        }
+    </script>
 </body>
 </html>
